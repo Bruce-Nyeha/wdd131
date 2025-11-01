@@ -1,0 +1,77 @@
+ /* Layout CSS desgining */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;    
+    margin: 0;
+    
+}
+
+header  {
+    background-color: #333;
+    color: #fff;
+    padding-bottom: 1px;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    background-color: #000;
+    margin-top: 30px;
+    
+}
+
+header nav a {
+    color: #eee;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header nav li {
+     display: inline-flex;
+     margin: 20px;
+     text-indent: 120px;
+     padding-right: 80px;
+     bottom: 50%;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 5fr ));
+    min-width: 100px;
+    min-height: 50vh;
+    gap: 30%;
+    font-family: 'Times New Roman', Times, serif;
+}
+ 
+
+main  {
+    background-color: #ccc;
+    padding: 20px;
+    min-height: 100%;
+    min-width: 180%;
+}
+
+aside {
+    padding: 20px;
+    min-height: 100%;
+
+}
+
+footer {
+    display: flex;
+    background-color:#333 ;
+    justify-content: center;
+    padding-bottom: 150px;
+    padding-top: 10px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
