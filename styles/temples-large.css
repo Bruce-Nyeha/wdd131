@@ -1,0 +1,30 @@
+/* Large view styles - only loads on wider screens */
+@media (min-width: 640px) {
+    #menu {
+        display: none;
+    }
+
+    nav {
+        max-height: none;
+        background: transparent;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    main {
+        padding: 0 2rem;
+    }
+}

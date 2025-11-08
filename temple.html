@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album | Your Name</title>
+    <meta name="description" content="A responsive temple photo album showcasing old, new, large, and small temples of The Church of Jesus Christ of Latter-day Saints.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Menu" aria-expanded="false">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="temple.html">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Beautiful Temples Around the World</h1>
+
+        <section class="gallery">
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Salt Lake Temple" loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rome-italy-temple.jpg" alt="Rome Italy Temple" loading="lazy">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/provo-city-center-temple.jpg" alt="Provo City Center Temple" loading="lazy">
+                <figcaption>Provo City Center Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/laie-hawaii-temple.jpg" alt="Laie Hawaii Temple" loading="lazy">
+                <figcaption>Laie Hawaii Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/manti-temple.jpg" alt="Manti Utah Temple" loading="lazy">
+                <figcaption>Manti Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/kyiv-ukraine-temple.jpg" alt="Kyiv Ukraine Temple" loading="lazy">
+                <figcaption>Kyiv Ukraine Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rexburg-temple.jpg" alt="Rexburg Idaho Temple" loading="lazy">
+                <figcaption>Rexburg Idaho Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/porto-alegre-brazil-temple.jpg" alt="Porto Alegre Brazil Temple" loading="lazy">
+                <figcaption>Porto Alegre Brazil Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/tokyo-japan-temple.jpeg" alt="Tokyo Japan Temple" loading="lazy">
+                <figcaption>Tokyo Japan Temple</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Bruce Nyeha | Temple Images Album</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

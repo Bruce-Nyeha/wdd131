@@ -1,0 +1,9 @@
+// scripts/getdates.js
+document.addEventListener("DOMContentLoaded", () => {
+    // Current year
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+    // Last modified
+    document.getElementById("lastModified").textContent = 
+        "Last Modification: " + document.lastModified;
+});
