@@ -1,0 +1,39 @@
+/* MOBILE: SHOW SVG ICON */
+@media (max-width: 639px) {
+  .hero-bg img {
+    height: 600px;
+  }
+
+  .hero-overlay {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .weather h2, .about h2 {
+    font-size: 1.3rem;
+  }
+
+  /* FORCE SHOW SVG ON MOBILE */
+  .weather-icon {
+    display: block !important;
+  }
+}
+
+/* DESKTOP: SHOW Sun EMOJI, HIDE SVG */
+@media (min-width: 640px) {
+  .weather h2::after {
+    content: "Sun";
+    font-size: 1.8rem;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+
+  .weather-icon {
+    display: none !important;
+  }
+}
