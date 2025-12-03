@@ -1,0 +1,102 @@
+/* siteplan.css - SolLichtRise Tech - Bruce Nyeha */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
+}
+
+header {
+    background: #D32F2F;           /* Ghana red */
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+
+section img {
+width: 500px;
+}
+
+
+h2 {
+    color: #D32F2F;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #0288D1;
+    padding-bottom: 0.5rem;
+}
+
+.color-palette, .typography {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.color, .font-sample {
+    flex: 1;
+    min-width: 200px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.color {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.primary   { background: #D32F2F; }
+.secondary { background: #0288D1; }
+.accent    { background: #FFD700; color: #000; }
+.dark      { background: #212121; }
+.light     { background: #f8f9fa; color: #000; }
+
+.wireframe img {
+    width: 100%;
+    max-width: 800px;
+    border: 2px solid #0288D1;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    color: #555;
+    font-size: 0.9rem;
+}
