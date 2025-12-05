@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SolLichtRise Tech | Home</title>
+  <meta name="description" content="Clean Energy + Smart Software Solutions by Bruce Nyeha">
+  <meta name="author" content="Bruce Nyeha">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="week06/styles/sollichtrise.css">
+</head>
+<body>
+  <header>
+    <img src="week06/images/sollichtrise-logo.JPG" alt="SolLichtRise Tech Logo" class="logo" loading="lazy">
+    <h1>SolLichtRise Tech</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="sollichtrise.html" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <img src="week06/images/system.JPG" alt="Solar installation" loading="lazy">
+      <div class="overlay">
+        <h2>Powering the Future with Clean Energy & Smart Code</h2>
+        <p>Solar systems + custom software = real impact for Ghana and Africa</p>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label>Name <input type="text" name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Service Needed
+          <select name="service" required>
+            <option value="">Choose...</option>
+            <option>Solar Installation</option>
+            <option>Web Development</option>
+            <option>Both</option>
+          </select>
+        </label>
+        <label>Message <textarea name="message" rows="5" required></textarea></label>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Bruce Nyeha · Ghana</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+  <script src="week06/scripts/sollichtrise.js" defer></script>
+</body>
+</html>

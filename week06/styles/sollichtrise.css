@@ -1,0 +1,605 @@
+/* ========================================
+   SOLLICHT RISE TECH — FINAL UNIVERSAL CSS 2025
+   Works perfectly on sollichtrise.html (Home), services.html, about.html
+   Ghana Proud · Bruce Nyeha · WDD131 Final Project
+   ======================================== */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ============= HEADER & LOGO ============= */
+header {
+  background: #D32F2F;
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.logo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #FFD700;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  margin-top: 1.2rem;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* ============= NAVIGATION ============= */
+nav {
+  background: #212121;
+  padding: 1.2rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background: #FFD700;
+  color: #D32F2F;
+  transform: translateY(-3px);
+}
+
+/* ============= MAIN ============= */
+main {
+  flex: 1;
+  max-width: 1300px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+/* Hero (Home page) */
+.hero {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+  margin-bottom: 4rem;
+}
+
+.hero img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.9));
+  color: white;
+  padding: 5rem 2rem 3rem;
+  text-align: center;
+}
+
+.overlay h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.overlay p {
+  font-size: 1.4rem;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+
+/* Contact Form (Home) */
+.contact-form {
+  background: white;
+  max-width: 700px;
+  margin: 0 auto 5rem;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  border: 3px solid #FFD700;
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #D32F2F;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.contact-form label { display: block; margin: 1.5rem 0 0.5rem; font-weight: 600; }
+.contact-form input, .contact-form select, .contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+.contact-form button {
+  background: #D32F2F;
+  color: white;
+  padding: 1.2rem;
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.contact-form button:hover { background: #b71c1c; transform: translateY(-3px); }
+
+/* ============= SERVICES PAGE — PREMIUM GHANA LOOK ============= */
+
+.page-intro {
+  text-align: center;
+  margin: 4rem auto 5rem;
+  max-width: 900px;
+  padding: 0 1rem;
+}
+
+.page-intro h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.2rem;
+  color: #D32F2F;
+  margin-bottom: 1rem;
+}
+
+.page-intro p {
+  font-size: 1.3rem;
+  color: #555;
+}
+
+/* Services Gallery — This is the magic */
+.services-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto 6rem;
+  padding: 0 1rem;
+}
+
+.services-gallery figure {
+  background: white;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 15px 45px rgba(0,0,0,0.18);
+  transition: all 0.5s ease;
+  border: 4px solid transparent;
+}
+
+.services-gallery figure:hover {
+  transform: translateY(-20px);
+  border-color: #FFD700;
+  box-shadow: 0 30px 70px rgba(211,47,47,0.3);
+}
+
+.services-gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.services-gallery figure:hover img {
+  transform: scale(1.08);
+}
+
+.services-gallery figcaption {
+  padding: 2.5rem 2rem;
+  text-align: center;
+  background: white;
+}
+
+.services-gallery h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #D32F2F;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.services-gallery p {
+  color: #444;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+/* Mobile perfection */
+@media (max-width: 768px) {
+  .services-gallery {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .services-gallery img { height: 260px; }
+  .page-intro h2 { font-size: 2.6rem; }
+}
+
+@media (max-width: 480px) {
+  .services-gallery img { height: 220px; }
+  .services-gallery h3 { font-size: 1.8rem; }
+}
+
+/* ============= ABOUT PAGE — CEO GHANA EDITION ============= */
+
+.about-intro {
+  text-align: center;
+  max-width: 1000px;
+  margin: 4rem auto 6rem;
+  padding: 0 1.5rem;
+}
+
+.about-intro h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.3rem;
+  color: #D32F2F;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.about-intro p {
+  font-size: 1.35rem;
+  color: #444;
+  line-height: 1.9;
+}
+
+/* Bruce Card — The star of the show */
+.bruce-card {
+  background: white;
+  max-width: 1100px;
+  margin: 5rem auto;
+  padding: 4rem;
+  border-radius: 32px;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.22);
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  border: 5px solid #FFD700;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.bruce-img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 10px solid #FFD700;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  flex-shrink: 0;
+  transition: transform 0.5s;
+}
+
+.bruce-img:hover {
+  transform: scale(1.05);
+}
+
+.bruce-info h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.8rem;
+  color: #D32F2F;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.bruce-info > p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: #f0f0f0;
+  padding: 1rem 1.5rem;
+  margin: 0.8rem 0;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #333;
+  border-left: 6px solid #D32F2F;
+  transition: all 0.3s;
+}
+
+.skills li:hover {
+  background: #FFD700;
+  color: #D32F2F;
+  transform: translateX(10px);
+}
+
+/* Achievements */
+.achievements {
+  max-width: 1200px;
+  margin: 6rem auto;
+  padding: 0 1rem;
+}
+
+.achievements h2 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.8rem;
+  color: #D32F2F;
+  margin-bottom: 4rem;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.achievement {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  transition: all 0.4s;
+  border: 3px solid transparent;
+}
+
+.achievement:hover {
+  transform: translateY(-15px);
+  border-color: #FFD700;
+  box-shadow: 0 25px 60px rgba(211,47,47,0.2);
+}
+
+.achievement h4 {
+  font-family: 'Orbitron', sans-serif;
+  color: #D32F2F;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.achievement p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* Goals */
+.goals {
+  max-width: 900px;
+  margin: 6rem auto;
+  padding: 0 1rem;
+}
+
+.goals h2 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.8rem;
+  color: #D32F2F;
+  margin-bottom: 3rem;
+}
+
+.goals-list {
+  background: white;
+  padding: 3rem;
+  border-radius: 28px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  border-left: 8px solid #FFD700;
+}
+
+.goals-list li {
+  font-size: 1.35rem;
+  margin: 1.8rem 0;
+  padding-left: 1rem;
+  color: #333;
+  position: relative;
+}
+
+.goals-list li::before {
+  content: "★";
+  color: #FFD700;
+  font-size: 1.5rem;
+  position: absolute;
+  left: -2.5rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .bruce-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  .bruce-img {
+    width: 260px;
+    height: 260px;
+  }
+  .about-intro h2 { font-size: 2.6rem; }
+  .achievement-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .bruce-img { width: 220px; height: 220px; }
+  .goals-list { padding: 2rem; }
+}
+/* ============= REFERENCES PAGE — CLEAN & PROUD ============= */
+
+.references-intro {
+  text-align: center;
+  max-width: 900px;
+  margin: 4rem auto 6rem;
+  padding: 0 1.5rem;
+}
+
+.references-intro h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  color: #D32F2F;
+  margin-bottom: 1rem;
+}
+
+.references-intro p {
+  font-size: 1.3rem;
+  color: #555;
+}
+
+.references-list {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem 6rem;
+  display: grid;
+  gap: 3rem;
+}
+
+.reference-item {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 24px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  border-left: 8px solid #FFD700;
+}
+
+.reference-item h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #D32F2F;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 3px solid #FFD700;
+}
+
+.reference-item ul {
+  list-style: none;
+  padding-left: 0.5rem;
+}
+
+.reference-item li {
+  margin: 1rem 0;
+  padding-left: 1.8rem;
+  position: relative;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.reference-item li::before {
+  content: "→";
+  color: #D32F2F;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.reference-item a {
+  color: #D32F2F;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.reference-item a:hover {
+  text-decoration: underline;
+  color: #b71c1c;
+}
+
+.ghana-flag {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #006b3f, #fcd116, #ce1126);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .references-intro h2 { font-size: 2.5rem; }
+  .reference-item { padding: 2rem; }
+}
+/* ============= FOOTER — FINAL TOUCH (Ghana Proud) ============= */
+footer {
+  background: #111;
+  color: #eee;
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+  margin-top: auto;
+  border-top: 6px solid #FFD700;
+  font-family: 'Inter', sans-serif;
+}
+
+footer p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+footer a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+footer a:hover {
+  background: #FFD700;
+  color: #D32F2F;
+}
+
+/* Special Ghana flag text effect */
+footer p:first-child::after {
+  content: " Ghana";
+  color: #FFD700;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  footer { padding: 3rem 1rem; }
+  footer p { font-size: 1rem; }
+}
